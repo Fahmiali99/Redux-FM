@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import accountReducer from "./reducer";
-import accountSlice from "./slice";
+import multipleMath from "./multiple";
+
 
 export const store = configureStore({
     reducer: {
-        account: accountSlice
+        multiple: multipleMath
     }
 });
 

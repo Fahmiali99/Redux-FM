@@ -8,18 +8,18 @@ const initialState: InitialState = {
     value: 0
 }
 
-export const accountSlice = createSlice({
-    name: "account",
+export const multipleMath = createSlice({
+    name: "multiple",
     initialState,
     reducers: {
-        setDeposit: (state, action) => {
+        setAdd: (state, action) => {
             state.value += action.payload;
         },
-        setWithdraw: (state, action) => {
+        setReduced: (state, action) => {
             state.value -= action.payload;
         }
     }
 });
 
-export const {setDeposit, setWithdraw} = accountSlice.actions;
-export default accountSlice.reducer;
+export const {setAdd, setReduced} = multipleMath.actions;
+export default multipleMath.reducer;
